@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cuota Mensual</title>
+    <link rel="stylesheet" href="Styles/main.css">
+</head>
+<body>
+    <h1>Calculadora de Cuota Mensual</h1>
+    
+    <div class="laInfo">
+        <table class="datos_entrada">
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" placeholder="Ingrese su nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="prestamo">Préstamo:</label></td>
+                <td><input type="number" id="prestamo" placeholder="Monto del préstamo "></td>
+            </tr>
+            <tr>
+                <td><label for="meses">Meses:</label></td>
+                <td><input type="number" id="meses" placeholder="Ingrese los meses"></td>
+            </tr>
+            <tr>
+                <td><label for="interes">Interés:</label></td>
+                <td><input type="number" id="interes" step="0.01" placeholder="sin el %"></td>
+            </tr>
+        </table>
+        
+        <div>
+            <button onclick="calcularCuota()">Calcular Cuota</button>
+            <button onclick="mostrarTodos()">Mostrar Todos</button>
+        </div>
+        
+        <div style="width: 100%; display: flex; justify-content: center;">
+            <textarea id="resultado" placeholder="Resultado aparecerá aquí..." readonly></textarea>
+        </div>
+        
+        <div class="reportes">
+            <h2>Reportes</h2>
+            
+            <div class="botones-reportes">
+                <button onclick="sumatoriaCuotas()">Sumatoria de Cuotas</button>
+                <button onclick="cuotasMayores300k()">Cuotas > $300,000</button>
+                <button onclick="menosUnAnio()">Pagos < 1 año</button>
+                <button onclick="prestamoMayor5M()">Préstamo > $5,000,000</button>
+                <button onclick="interesMenor2()">Interés < 2%</button>
+                <button onclick="incrementarCuotas()">+ $90,000 a cuotas</button>
+                <button onclick="decrementarPrestamos()">- $90,000 a préstamos</button>
+                <button onclick="soloCuotas()">Solo Cuotas</button>
+            </div>
+            
+            <div class="reporte-resultado" id="reporteResultado">
+                Los resultados de los reportes aparecerán aquí...
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/script.js"></script>
+</body>
+<footer class="pie-pagina">
+    <div class="contenido-pie">
+        <p>  Calculadora de Cuota Mensual - Melany Ceballos Ortiz :D</p>
+        <p>Desarrollado para Taller FrontEnd Dinámico</p>
+        
+    </div>
+</footer>
+</html>

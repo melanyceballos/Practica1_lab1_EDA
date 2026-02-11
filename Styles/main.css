@@ -1,0 +1,90 @@
+body {
+    text-align: center;
+    background-color: rgb(255, 206, 244);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: rgb(161, 1, 100);
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.laInfo{
+    display: flex;
+    flex-flow: column nowrap;    
+    
+}
+
+table {
+    width: 500px;
+    margin: 20px auto;
+    padding: 5px auto;
+    border: 2px solid;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+textArea {
+    width: 500px;
+    height: 100px;
+    
+}
+
+.error {
+    color: rgb(65, 1, 65);
+}
+
+.datos_entrada {    
+    background-color: #ffadfb;
+}
+
+button {
+    width:100px;
+    height: 40px;
+    margin: 10px;
+}
+.pie-pagina {
+    background-color: rgb(248, 96, 210);
+    color: rgb(2, 2, 2);
+    text-align: center;
+    padding: 20px;  
+    margin-top: 40px;
+    font-size: 16px; 
+}
+
+/* Estilos adicionales para reportes */
+.reportes {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 2px solid rgb(187, 110, 177);
+}
+
+.reporte-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fa3487;
+    border-radius: 5px;
+}
+
+.botones-reportes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.reporte-resultado {
+    background-color: rgb(252, 51, 192);
+    border: 1px solid #ff6bb5;
+    padding: 10px;
+    margin: 10px 0;
+    min-height: 50px;
+    border-radius: 5px;
+}
